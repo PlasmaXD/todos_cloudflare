@@ -2,14 +2,14 @@
 
 ## 概要
 
-Cloudflare Workers と Workers KV を活用した、エッジで動作するシンプルな Todo アプリケーションです。サーバーレス環境で CRUD 操作を実装し、HTML での UI 表示と JSON API の両方を提供します。
+Cloudflare Workers と Workers KV を活用した,Todo アプリケーション
 
-## 特徴
+<!-- ## 特徴
 
 * **エッジ実行**: Cloudflare のエッジネットワーク上で高速に動作
 * **永続化**: Workers KV を用いたデータ保存
 * **シングルファイル実装**: `src/index.js` 1 ファイルで完結
-* **UI+API**: HTML レンダリングに加え、JSON API も提供
+* **UI+API**: HTML レンダリングに加え、JSON API も提供 -->
 
 ## ディレクトリ構成
 
@@ -21,14 +21,14 @@ todos/
 └── README.md           # このファイル
 ```
 
-## 前提条件
+## Runtime
 
 * Node.js (v16 以上)
 * Wrangler CLI (v4.x)
 * Cloudflare アカウント
 * Workers KV ネームスペースを作成済み
 
-## セットアップ
+## SetUp
 
 1. リポジトリをクローンまたはダウンロード
 2. 依存パッケージをインストール
@@ -53,11 +53,11 @@ todos/
    }
    ```
 
-   * `<YOUR_KV_NAMESPACE_ID>` は Cloudflare ダッシュボードの **Workers & KV → KV Namespaces** から取得します。
+   * `<YOUR_KV_NAMESPACE_ID>` は Cloudflare ダッシュボードの **Workers & KV → KV Namespaces** から取得します
 
 ## ローカル開発
 
-以下のコマンドでローカル開発サーバーを起動し、`http://localhost:8787` で動作確認できます。
+以下のコマンドでローカル開発サーバーを起動し、`http://localhost:8787` で動作確認できます
 
 ```bash
 npx wrangler dev
@@ -65,7 +65,7 @@ npx wrangler dev
 
 ## デプロイ
 
-Cloudflare 環境へデプロイするには次のコマンドを実行します。
+Cloudflare 環境へデプロイするには次のコマンドを実行します
 
 ```bash
 npx wrangler deploy
