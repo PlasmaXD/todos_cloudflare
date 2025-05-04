@@ -9,7 +9,13 @@
 	"compatibility_date": "2025-05-04",
 	"observability": {
 		"enabled": true
-	}
+	},
+	"kv_namespaces": [
+	  {
+		"binding": "TODOS",          // スクリプト内で使用するバインディング名 :contentReference[oaicite:1]{index=1}
+		"id": "eb47d6929c8e4935a44cd117718401c5"  // Dashboardで作成したNamespaceのID :contentReference[oaicite:2]{index=2}
+	  }
+	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
